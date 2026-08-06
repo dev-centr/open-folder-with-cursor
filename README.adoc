@@ -1,13 +1,37 @@
-link:https://github.com/dev-centr/open-folder-with-cursor[image:https://img.shields.io/badge/repo-GitHub-24292e?style=flat[Repository]]
+ifndef::env-github[:icons: font]
+:toc: preamble
+:toclevels: 2
+:sectanchors:
+
+ifndef::env-github[]
+image:https://img.shields.io/github/contributors/dev-centr/open-folder-with-cursor.svg?style=for-the-badge[Contributors,link=https://github.com/dev-centr/open-folder-with-cursor/graphs/contributors]
+image:https://img.shields.io/github/forks/dev-centr/open-folder-with-cursor.svg?style=for-the-badge[Forks,link=https://github.com/dev-centr/open-folder-with-cursor/network/members]
+image:https://img.shields.io/github/stars/dev-centr/open-folder-with-cursor.svg?style=for-the-badge[Stars,link=https://github.com/dev-centr/open-folder-with-cursor/stargazers]
+image:https://img.shields.io/github/issues/dev-centr/open-folder-with-cursor.svg?style=for-the-badge[Issues,link=https://github.com/dev-centr/open-folder-with-cursor/issues]
+endif::[]
+
+ifdef::env-github[]
+image:https://img.shields.io/github/contributors/dev-centr/open-folder-with-cursor.svg?style=for-the-badge[Contributors]
+image:https://img.shields.io/github/forks/dev-centr/open-folder-with-cursor.svg?style=for-the-badge[Forks]
+image:https://img.shields.io/github/stars/dev-centr/open-folder-with-cursor.svg?style=for-the-badge[Stars]
+image:https://img.shields.io/github/issues/dev-centr/open-folder-with-cursor.svg?style=for-the-badge[Issues]
+endif::[]
 
 = Open folder with Cursor
+
+Install "Open-with Cursor" item in right-click menu in File Explorer in Windows.
+
+link:https://github.com/dev-centr/open-folder-with-cursor/issues[Report Bug] ·
+link:https://github.com/dev-centr/open-folder-with-cursor/issues[Request Feature]
+
+== About The Project
 
 On Windows, in order to open a folder in Cursor from File Explorer, you have to set up the context menu options in the registry. This repository contains `.reg` files that automate the process of adding "Open with Cursor" context menu options to File Explorer.
 
 == Features
 
-*   **Open from Folder Background**: Adds an "Open with Cursor" option when you right-click on the background of a folder (i.e., not on a specific file or subfolder).
-*   **Open from Folder in Tree/Details Pane**: Adds an "Open with Cursor" option when you right-click on a folder in the navigation tree or the details pane.
+* **Open from Folder Background**: Adds an "Open with Cursor" option when you right-click on the background of a folder (i.e., not on a specific file or subfolder).
+* **Open from Folder in Tree/Details Pane**: Adds an "Open with Cursor" option when you right-click on a folder in the navigation tree or the details pane.
 
 == Installation
 
@@ -17,21 +41,21 @@ Windows 11 introduced a new streamlined context menu. You can install the contex
 
 This option adds "Open with Cursor" to the modern Windows 11 streamlined context menu that appears by default.
 
-.   **Download the `.reg` files**:
-    *   `add-command-to-folder-background-win11.reg`
-    *   `add-command-to-folder-in-tree-win11.reg`
-.   **Double-click each `.reg` file**: Windows will ask for confirmation to merge the information into the registry. Click "Yes" to proceed.
-.   **Confirm**: A confirmation message will appear indicating that the keys and values have been successfully added to the registry.
+. **Download the `.reg` files**:
+* `add-command-to-folder-background-win11.reg`
+* `add-command-to-folder-in-tree-win11.reg`
+. **Double-click each `.reg` file**: Windows will ask for confirmation to merge the information into the registry. Click "Yes" to proceed.
+. **Confirm**: A confirmation message will appear indicating that the keys and values have been successfully added to the registry.
 
 === Option 2: Classic Context Menu (Show More Options)
 
 This option adds "Open with Cursor" to the classic Windows context menu, accessible by clicking "Show more options" in the Windows 11 context menu, or directly in older versions of Windows.
 
-.   **Download the `.reg` files**:
-    *   `add-command-to-folder-background.reg`
-    *   `add-command-to-folder-in-tree.reg`
-.   **Double-click each `.reg` file**: Windows will ask for confirmation to merge the information into the registry. Click "Yes" to proceed.
-.   **Confirm**: A confirmation message will appear indicating that the keys and values have been successfully added to the registry.
+. **Download the `.reg` files**:
+* `add-command-to-folder-background.reg`
+* `add-command-to-folder-in-tree.reg`
+. **Double-click each `.reg` file**: Windows will ask for confirmation to merge the information into the registry. Click "Yes" to proceed.
+. **Confirm**: A confirmation message will appear indicating that the keys and values have been successfully added to the registry.
 
 === Option 3: Both Menus
 
@@ -43,13 +67,9 @@ If you prefer to always use the classic context menu and disable the new Windows
 
 **Important**: This disables the new Windows 11 streamlined menu system-wide. If you use this approach, you only need the classic registry files (Option 2), not the Windows 11-specific ones.
 
-.   **Disable the new Windows 11 menu**: Double-click `enable-classic-menu-always.reg` and confirm the registry merge.
-.   **Restart Windows Explorer**: Restart File Explorer to apply the change. You can do this by:
-    *   Opening Task Manager (Ctrl+Shift+Esc)
-    *   Finding "Windows Explorer" in the processes list
-    *   Right-clicking and selecting "Restart"
-    *   Or simply restart your computer
-.   **Install the classic menu files**: Follow the instructions in "Option 2: Classic Context Menu" above. The classic menu will now appear directly when you right-click.
+. **Disable the new Windows 11 menu**: Double-click `enable-classic-menu-always.reg` and confirm the registry merge.
+. **Restart Windows Explorer**: Restart File Explorer to apply the change.
+. **Install the classic menu files**: Follow the instructions in "Option 2: Classic Context Menu" above.
 
 **To revert** (restore the new Windows 11 menu): Double-click `disable-classic-menu-always.reg` and restart Windows Explorer as described above.
 
@@ -57,23 +77,28 @@ If you prefer to always use the classic context menu and disable the new Windows
 
 After installation, you can use the new context menu options:
 
-*   **Open Current Directory**: Navigate to any folder in Windows Explorer. Right-click on an empty space within the folder. You will see an "Open with Cursor" option. Clicking it will open that folder in Cursor.
-*   **Open Specific Folder**: Right-click on any folder icon (either in the navigation tree on the left or in the details pane on the right). You will see an "Open with Cursor" option. Clicking it will open that specific folder in Cursor.
+* **Open Current Directory**: Navigate to any folder in Windows Explorer. Right-click on an empty space within the folder. You will see an "Open with Cursor" option. Clicking it will open that folder in Cursor.
+* **Open Specific Folder**: Right-click on any folder icon (either in the navigation tree on the left or in the details pane on the right). You will see an "Open with Cursor" option. Clicking it will open that specific folder in Cursor.
 
 == Uninstallation
 
 === Remove from Windows 11 New Context Menu
 
-.   **Download the `.reg` files**:
-    *   `remove-command-to-folder-background-win11.reg`
-    *   `remove-command-to-folder-in-tree-win11.reg`
-.   **Double-click each `.reg` file**: Windows will ask for confirmation to merge the information into the registry. Click "Yes" to proceed.
-.   **Confirm**: A confirmation message will appear indicating that the keys and values have been successfully removed from the registry.
+. **Download the `.reg` files**:
+* `remove-command-to-folder-background-win11.reg`
+* `remove-command-to-folder-in-tree-win11.reg`
+. **Double-click each `.reg` file** and confirm the registry merge.
 
 === Remove from Classic Context Menu
 
-.   **Download the `.reg` files**:
-    *   `remove-command-to-folder-background.reg`
-    *   `remove-command-to-folder-in-tree.reg`
-.   **Double-click each `.reg` file**: Windows will ask for confirmation to merge the information into the registry. Click "Yes" to proceed.
-.   **Confirm**: A confirmation message will appear indicating that the keys and values have been successfully removed from the registry.
+. **Download the `.reg` files**:
+* `remove-command-to-folder-background.reg`
+* `remove-command-to-folder-in-tree.reg`
+. **Double-click each `.reg` file** and confirm the registry merge.
+
+== Contact
+
+DevCentr.org — support@devcentr.org
+
+* Project: https://github.com/dev-centr/open-folder-with-cursor
+* Site: https://devcentr.org
