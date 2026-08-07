@@ -3,19 +3,31 @@ ifndef::env-github[:icons: font]
 :toclevels: 2
 :sectanchors:
 
+ifdef::env-github[]
+++++
+<a id="readme-top"></a>
+<div align="center">
+<a href="https://github.com/dev-centr/open-folder-with-cursor/graphs/contributors"><img src="https://img.shields.io/github/contributors/dev-centr/open-folder-with-cursor.svg?style=for-the-badge" alt="Contributors"></a>
+<a href="https://github.com/dev-centr/open-folder-with-cursor/network/members"><img src="https://img.shields.io/github/forks/dev-centr/open-folder-with-cursor.svg?style=for-the-badge" alt="Forks"></a>
+<a href="https://github.com/dev-centr/open-folder-with-cursor/stargazers"><img src="https://img.shields.io/github/stars/dev-centr/open-folder-with-cursor.svg?style=for-the-badge" alt="Stars"></a>
+<a href="https://github.com/dev-centr/open-folder-with-cursor/issues"><img src="https://img.shields.io/github/issues/dev-centr/open-folder-with-cursor.svg?style=for-the-badge" alt="Issues"></a>
+<br />
+<h3 align="center">Open folder with Cursor</h3>
+<p align="center">
+Install "Open-with Cursor" item in right-click menu in File Explorer in Windows.<br />
+<a href="https://github.com/dev-centr/open-folder-with-cursor/issues">Report Bug</a>
+&middot;
+<a href="https://github.com/dev-centr/open-folder-with-cursor/issues">Request Feature</a>
+</p>
+</div>
+++++
+endif::[]
+
 ifndef::env-github[]
 image:https://img.shields.io/github/contributors/dev-centr/open-folder-with-cursor.svg?style=for-the-badge[Contributors,link=https://github.com/dev-centr/open-folder-with-cursor/graphs/contributors]
 image:https://img.shields.io/github/forks/dev-centr/open-folder-with-cursor.svg?style=for-the-badge[Forks,link=https://github.com/dev-centr/open-folder-with-cursor/network/members]
 image:https://img.shields.io/github/stars/dev-centr/open-folder-with-cursor.svg?style=for-the-badge[Stars,link=https://github.com/dev-centr/open-folder-with-cursor/stargazers]
 image:https://img.shields.io/github/issues/dev-centr/open-folder-with-cursor.svg?style=for-the-badge[Issues,link=https://github.com/dev-centr/open-folder-with-cursor/issues]
-endif::[]
-
-ifdef::env-github[]
-image:https://img.shields.io/github/contributors/dev-centr/open-folder-with-cursor.svg?style=for-the-badge[Contributors]
-image:https://img.shields.io/github/forks/dev-centr/open-folder-with-cursor.svg?style=for-the-badge[Forks]
-image:https://img.shields.io/github/stars/dev-centr/open-folder-with-cursor.svg?style=for-the-badge[Stars]
-image:https://img.shields.io/github/issues/dev-centr/open-folder-with-cursor.svg?style=for-the-badge[Issues]
-endif::[]
 
 = Open folder with Cursor
 
@@ -23,6 +35,7 @@ Install "Open-with Cursor" item in right-click menu in File Explorer in Windows.
 
 link:https://github.com/dev-centr/open-folder-with-cursor/issues[Report Bug] ·
 link:https://github.com/dev-centr/open-folder-with-cursor/issues[Request Feature]
+endif::[]
 
 == About The Project
 
@@ -32,6 +45,12 @@ On Windows, in order to open a folder in Cursor from File Explorer, you have to 
 
 * **Open from Folder Background**: Adds an "Open with Cursor" option when you right-click on the background of a folder (i.e., not on a specific file or subfolder).
 * **Open from Folder in Tree/Details Pane**: Adds an "Open with Cursor" option when you right-click on a folder in the navigation tree or the details pane.
+
+ifdef::env-github[]
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
+endif::[]
 
 == Installation
 
@@ -73,12 +92,24 @@ If you prefer to always use the classic context menu and disable the new Windows
 
 **To revert** (restore the new Windows 11 menu): Double-click `disable-classic-menu-always.reg` and restart Windows Explorer as described above.
 
+ifdef::env-github[]
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
+endif::[]
+
 == Usage
 
 After installation, you can use the new context menu options:
 
 * **Open Current Directory**: Navigate to any folder in Windows Explorer. Right-click on an empty space within the folder. You will see an "Open with Cursor" option. Clicking it will open that folder in Cursor.
 * **Open Specific Folder**: Right-click on any folder icon (either in the navigation tree on the left or in the details pane on the right). You will see an "Open with Cursor" option. Clicking it will open that specific folder in Cursor.
+
+ifdef::env-github[]
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
+endif::[]
 
 == Uninstallation
 
@@ -96,9 +127,21 @@ After installation, you can use the new context menu options:
 * `remove-command-to-folder-in-tree.reg`
 . **Double-click each `.reg` file** and confirm the registry merge.
 
+ifdef::env-github[]
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
+endif::[]
+
 == Contact
 
 DevCentr.org — support@devcentr.org
 
 * Project: https://github.com/dev-centr/open-folder-with-cursor
 * Site: https://devcentr.org
+
+ifdef::env-github[]
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
+endif::[]
